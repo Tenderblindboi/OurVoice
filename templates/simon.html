@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet"  href="../static/css/style.css">
+
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+<body>
+
+ <style>
+body {
+  background-color: #9999FF;
+}
+</style>
+
+	<header>
+	<div>
+		<img src="../static/img/logo.png" alt="logo" class="logo">
+
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+                <li><a href="ro.html">Ro</a></li>
+                <li><a href="lillian.html">Lillian</a></li>
+                <li><a href="simon.html">Simon</a></li>
+                <li><a href="map.html">map</a></li>
+
+
+
+
+			</ul>
+
+
+		</nav>
+
+	</div>
+
+</header>
+
+
+<img src="../static/img/Eritrea.png" id="data">
+
+<img src="../static/img/Simon.png" id="avatar">    
+
+<img src="../static/img/flageritrea.png" id= "flag">
+
+
+<style>
+    
+   #flag {
+    position: absolute;
+  
+  
+  width: 600px;
+  height: 300px;  
+  left:900px;
+  top:-500px;
+}
+</style>
+
+
+
+
+<style>
+    
+   #avatar {
+    position: absolute;
+  
+  
+  width: 300px;
+  height: 300px;  
+  left:1500px;
+  top:300px;
+}
+</style>
+
+
+<style>
+    
+   #data {
+    position: absolute;
+  
+  
+  width: 500px;
+  height: 300px;  
+  left:-550px;
+  top:300px;
+}
+</style>
+
+
+<p id="rcorners1"></p>
+
+<style>
+    
+    #rcorners1 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 350px;
+  height: 300px;  
+  left:-200px;
+  top:250px;
+}
+</style>
+
+
+<script>
+
+var i = 0;
+var txt = 'My story begins being born in chesterfield, VA early in the morning on January 23, 1999. My parents immigrated from Eritrea a small African that recently had not existed till its independence in 1991. My father came to America on a student visa where he worked multiple jobs while earning his bachelors, 2 master’s degrees and finally his PhD. My mother fled Eritrea during the 30-year war for independence where she settled in Germany for the next 15 years, she learned the German and got her Bachelor of Science in chemistry.';
+var speed = 20;
+
+function typeWriter() {
+
+    
+  if (i < txt.length) {
+    document.getElementById("rcorners1").innerHTML += txt.charAt(i);
+    i++;
+    
+    setTimeout(typeWriter, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners1").addEventListener("click", typeWriter);
+
+function myFunction() {
+  document.getElementById("rcorners1").innerHTML = "";
+}
+</script>
+
+
+<p id="rcorners2"></p>
+
+<style>
+    
+    #rcorners2 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 500px;
+  height: 300px;  
+  left:-200px;
+  top:700px;
+}
+</style>
+
+
+<script>
+
+var j = 0;
+var txt1 = 'Being of first-generation child in the US is different experience as there are many things that my parents never had to deal with when they grew up. The Eritrean community is a tight knit group that is being on tradition and communal living but since our home country is one of a small population it is hard to have those relationships in the US were that type of culture is not a norm in society. Even though many Eritreans in the US have created groups and organizations to help foster the culture and many Eritreans choose to live near large concentrations of airport hubs and cities and those are usually the first places they come when immigrating to the US.';
+var speed = 50;
+
+function typeWriter1() {
+
+    
+  if (j < txt1.length) {
+    document.getElementById("rcorners2").innerHTML += txt1.charAt(j);
+    j++;
+    
+    setTimeout(typeWriter1, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners2").addEventListener("click", typeWriter1);
+
+function myFunction1() {
+  document.getElementById("rcorners2").innerHTML = "";
+}
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js" integrity="sha256-nnFnuz7rC1JLnvsb8M7A9aXcRHTpUN4vYA26t2UO+dQ=" crossorigin="anonymous"></script>
+<script src="../static/js/main.js"></script>
+
+
+
+
+</body>
+</html>

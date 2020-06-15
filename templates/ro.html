@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet"  href="../static/css/style.css">
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+    </style>
+
+
+    <style>
+body {
+  background-color: #9999FF;
+}
+</style>
+
+
+
+    
+
+    
+<body>
+    <header>
+	<div>
+		<img src="../static/img/logo.png" alt="logo" class="logo">
+
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+                <li><a href="ro.html">Ro</a></li>
+                <li><a href="lillian.html">Lillian</a></li>
+                <li><a href="simon.html">Simon</a></li>
+                <li><a href="map.html">map</a></li>
+
+
+
+			</ul>
+
+
+		</nav>
+
+	</div>
+
+</header>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+<img src="../static/img/india.png" id="data">
+
+<img src="../static/img/ro.png" id="avatar">    
+
+<img src="../static/img/malayali.jpg" id= "flag">
+
+
+<style>
+    
+   #flag {
+    position: absolute;
+  
+  
+  width: 600px;
+  height: 300px;  
+  left:900px;
+  top:-500px;
+}
+</style>
+
+
+
+
+<style>
+    
+   #avatar {
+    position: absolute;
+  
+  
+  width: 300px;
+  height: 300px;  
+  left:1500px;
+  top:300px;
+}
+</style>
+
+
+<style>
+    
+   #data {
+    position: absolute;
+  
+  
+  width: 500px;
+  height: 300px;  
+  left:-550px;
+  top:300px;
+}
+</style>
+
+
+<p id="rcorners1"></p>
+
+<style>
+    
+    #rcorners1 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 350px;
+  height: 300px;  
+  left:-200px;
+  top:250px;
+}
+</style>
+
+
+<script>
+
+var i = 0;
+var txt = 'Hi my name is Ro and I am a South Indian born in Chennai who moved to the states when I was 1.5 years old. Although I never thought about my status as an immigrant It would turn out to be one of the most shaping factors of my life';
+var speed = 50;
+
+function typeWriter() {
+
+    
+  if (i < txt.length) {
+    document.getElementById("rcorners1").innerHTML += txt.charAt(i);
+    i++;
+    
+    setTimeout(typeWriter, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners1").addEventListener("click", typeWriter);
+
+function myFunction() {
+  document.getElementById("rcorners1").innerHTML = "";
+}
+</script>
+
+
+
+
+<p id="rcorners2"></p>
+
+<style>
+    
+    #rcorners2 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 500px;
+  height: 300px;  
+  left:-200px;
+  top:700px;
+}
+</style>
+
+
+<script>
+
+var j = 0;
+var txt1 = 'Hi my name is Ro and I am a South Indian born in Chennai who moved to the states when I was 1.5 years old. Although I never thought about my status as an immigrant It would turn out to be one of the most shaping factors of my life';
+var speed = 50;
+
+function typeWriter1() {
+
+    
+  if (j < txt1.length) {
+    document.getElementById("rcorners2").innerHTML += txt1.charAt(j);
+    j++;
+    
+    setTimeout(typeWriter1, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners2").addEventListener("click", typeWriter1);
+
+function myFunction1() {
+  document.getElementById("rcorners2").innerHTML = "";
+}
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js" integrity="sha256-nnFnuz7rC1JLnvsb8M7A9aXcRHTpUN4vYA26t2UO+dQ=" crossorigin="anonymous"></script>
+
+<script src="../static/js/main.js"></script>
+
+</body>
+</html>

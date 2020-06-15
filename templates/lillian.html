@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet"  href="../static/css/style.css">
+
+    
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+<body>
+<style>
+body {
+  background-color: #9999FF;
+}
+</style>
+
+
+
+	<header>
+	<div>
+		<img src="../static/img/logo.png" alt="logo" class="logo">
+
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+                <li><a href="ro.html">Ro</a></li>
+                <li><a href="lillian.html">Lillian</a></li>
+                <li><a href="simon.html">Simon</a></li>
+                <li><a href="map.html">map</a></li>
+
+
+			</ul>
+
+
+		</nav>
+
+	</div>
+
+</header>
+
+
+
+<img src="../static/img/elsalvador.png" id="data">
+
+<img src="../static/img/lillian_close_mouth.png" id="avatar">    
+
+<img src="../static/img/flagsalvador.png" id= "flag">
+
+
+<style>
+    
+   #flag {
+    position: absolute;
+  
+  
+  width: 600px;
+  height: 300px;  
+  left:900px;
+  top:-500px;
+}
+</style>
+
+
+
+
+<style>
+    
+   #avatar {
+    position: absolute;
+  
+  
+  width: 300px;
+  height: 300px;  
+  left:1500px;
+  top:300px;
+}
+</style>
+
+
+<style>
+    
+   #data {
+    position: absolute;
+  
+  
+  width: 500px;
+  height: 300px;  
+  left:-550px;
+  top:300px;
+}
+</style>
+
+
+<p id="rcorners1"></p>
+
+<style>
+    
+    #rcorners1 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 350px;
+  height: 300px;  
+  left:-200px;
+  top:250px;
+}
+</style>
+
+
+<script>
+
+var i = 0;
+var txt = 'In the midst of the civil war in El Salvador, my mother and her parents arranged for me to be brought to the United States at the age of 11 months old. None of us knew English and came with little skill, no money but much hope. My father and most of his family were among the 75,000 casualties of this12 + year civil war. I was raised in Los Angeles, California in what was deemed the inner city. It was common to welcome other central american and mexican newcomers who came with grave stories of escaping poverty, hunger or violence in their countries of origin. The common thread was the desire to survive. ';
+var speed = 20;
+
+function typeWriter() {
+
+    
+  if (i < txt.length) {
+    document.getElementById("rcorners1").innerHTML += txt.charAt(i);
+    i++;
+    
+    setTimeout(typeWriter, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners1").addEventListener("click", typeWriter);
+
+function myFunction() {
+  document.getElementById("rcorners1").innerHTML = "";
+}
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners1").addEventListener("click", typeWriter);
+
+function myFunction() {
+  document.getElementById("rcorners1").innerHTML = "";
+}
+</script>
+
+<p id="rcorners2"></p>
+
+<style>
+    
+    #rcorners2 {
+    position: absolute;
+  border-radius: 25px;
+  background: #c8a2c8;
+  padding: 20px; 
+  width: 500px;
+  height: 300px;  
+  left:-200px;
+  top:700px;
+}
+</style>
+
+
+<script>
+
+var j = 0;
+var txt1 = 'Growin up surrounded by others who only spoke Spanish or very broken English gave me insight into how language could allow you to participate or exclude you from society. All of my family, neighbors, and acquaintances spoke spanish. Yet as they shared their stories, their accents quickly gave you insight of their country of origin, education attainment, and length of time in the United States. Being the only child in the family, I grew up watching Sesame Street and Mister Rogers Neighborhood. Since the programs were in English, it was assumed I understood what was being said and done. I was assigned the task to become the English Interpreter and cultural broker of our American life. As time went by, and I began to attend public school in Los Angeles, I came to befriend thousands of other children who shared similar experiences. We all had family members who only spoke the language of their country of origin, keep to themselves to avoid embarrassment because of strong accents or lack of understanding new customs, that language does not translate. ';
+var speed = 50;
+
+function typeWriter1() {
+
+    
+  if (j < txt1.length) {
+    document.getElementById("rcorners2").innerHTML += txt1.charAt(j);
+    j++;
+    
+    setTimeout(typeWriter1, speed);
+
+
+   
+  }
+
+  
+
+
+ }
+
+
+</script>
+
+
+
+
+
+<script>
+document.getElementById("rcorners2").addEventListener("click", typeWriter1);
+
+function myFunction1() {
+  document.getElementById("rcorners2").innerHTML = "";
+}
+</script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js" integrity="sha256-nnFnuz7rC1JLnvsb8M7A9aXcRHTpUN4vYA26t2UO+dQ=" crossorigin="anonymous"></script>
+<script src="../static/js/main.js"></script>
+
+</body>
+</html>
